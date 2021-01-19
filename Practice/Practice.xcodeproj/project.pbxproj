@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3702EA25B749680025BFAA /* PersistentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3702E925B749680025BFAA /* PersistentTests.swift */; };
+		9B3702F025B74EB90025BFAA /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3702EF25B74EB90025BFAA /* Tree.swift */; };
 		9B74839125B71377002CFD93 /* Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B74838725B71377002CFD93 /* Practice.framework */; };
-		9B74839625B71377002CFD93 /* PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74839525B71377002CFD93 /* PracticeTests.swift */; };
 		9B74839825B71377002CFD93 /* Practice.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B74838A25B71377002CFD93 /* Practice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B7483A525B713C3002CFD93 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7483A425B713C3002CFD93 /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B3702E825B749680025BFAA /* PracticeTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PracticeTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B3702E925B749680025BFAA /* PersistentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentTests.swift; sourceTree = "<group>"; };
+		9B3702EF25B74EB90025BFAA /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		9B74838725B71377002CFD93 /* Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B74838A25B71377002CFD93 /* Practice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Practice.h; sourceTree = "<group>"; };
 		9B74838B25B71377002CFD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B74839025B71377002CFD93 /* PracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B74839525B71377002CFD93 /* PracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTests.swift; sourceTree = "<group>"; };
 		9B74839725B71377002CFD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B7483A425B713C3002CFD93 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,7 @@
 		9B74838925B71377002CFD93 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				9B7483A325B713A6002CFD93 /* Persistent */,
 				9B74838A25B71377002CFD93 /* Practice.h */,
 				9B74838B25B71377002CFD93 /* Info.plist */,
 			);
@@ -80,10 +86,20 @@
 		9B74839425B71377002CFD93 /* PracticeTests */ = {
 			isa = PBXGroup;
 			children = (
-				9B74839525B71377002CFD93 /* PracticeTests.swift */,
 				9B74839725B71377002CFD93 /* Info.plist */,
+				9B3702E925B749680025BFAA /* PersistentTests.swift */,
+				9B3702E825B749680025BFAA /* PracticeTests-Bridging-Header.h */,
 			);
 			path = PracticeTests;
+			sourceTree = "<group>";
+		};
+		9B7483A325B713A6002CFD93 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				9B7483A425B713C3002CFD93 /* List.swift */,
+				9B3702EF25B74EB90025BFAA /* Tree.swift */,
+			);
+			path = Persistent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +163,11 @@
 				TargetAttributes = {
 					9B74838625B71377002CFD93 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					9B74838F25B71377002CFD93 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -194,6 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7483A525B713C3002CFD93 /* List.swift in Sources */,
+				9B3702F025B74EB90025BFAA /* Tree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B74839625B71377002CFD93 /* PracticeTests.swift in Sources */,
+				9B3702EA25B749680025BFAA /* PersistentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +361,7 @@
 		9B74839C25B71377002CFD93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2ABNASUGL6;
@@ -357,6 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sudo.park.Practice;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +387,7 @@
 		9B74839D25B71377002CFD93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2ABNASUGL6;
@@ -389,6 +412,8 @@
 		9B74839F25B71377002CFD93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ABNASUGL6;
 				INFOPLIST_FILE = PracticeTests/Info.plist;
@@ -399,6 +424,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sudo.park.PracticeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PracticeTests/PracticeTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -407,6 +434,8 @@
 		9B7483A025B71377002CFD93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ABNASUGL6;
 				INFOPLIST_FILE = PracticeTests/Info.plist;
@@ -417,6 +446,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sudo.park.PracticeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PracticeTests/PracticeTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
