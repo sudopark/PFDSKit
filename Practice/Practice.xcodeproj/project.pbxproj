@@ -12,6 +12,7 @@
 		9B74839125B71377002CFD93 /* Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B74838725B71377002CFD93 /* Practice.framework */; };
 		9B74839825B71377002CFD93 /* Practice.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B74838A25B71377002CFD93 /* Practice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B7483A525B713C3002CFD93 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7483A425B713C3002CFD93 /* List.swift */; };
+		9BE47D882605BF530017FB9E /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE47D872605BF530017FB9E /* Heap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		9B74839025B71377002CFD93 /* PracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B74839725B71377002CFD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B7483A425B713C3002CFD93 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		9BE47D872605BF530017FB9E /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				9B7483A425B713C3002CFD93 /* List.swift */,
 				9B3702EF25B74EB90025BFAA /* Tree.swift */,
+				9BE47D872605BF530017FB9E /* Heap.swift */,
 			);
 			path = Persistent;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE47D882605BF530017FB9E /* Heap.swift in Sources */,
 				9B7483A525B713C3002CFD93 /* List.swift in Sources */,
 				9B3702F025B74EB90025BFAA /* Tree.swift in Sources */,
 			);
